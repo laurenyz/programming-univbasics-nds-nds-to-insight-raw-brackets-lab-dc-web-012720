@@ -1,4 +1,4 @@
-require 'pry' 
+#require 'pry' 
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
@@ -23,7 +23,7 @@ def directors_totals(nds)
     gross_total += nds[row_index][:movies][movie_index][:worldwide_gross]
     
     movie_index += 1
-    binding.pry
+   # binding.pry
     end
     # p gross_total
     directors_totals = {nds[row_index][:name] => gross_total}
