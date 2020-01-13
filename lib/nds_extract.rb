@@ -26,7 +26,7 @@ def directors_totals(nds)
    # binding.pry
     end
     # p gross_total
-    directors_totals[:name] = {nds[row_index][:name] => gross_total}
+    directors_totals[:name] = gross_total
     row_index += 1 
     
     
